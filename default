@@ -1,0 +1,14 @@
+
+upstream balanginx {
+        server 54.197.13.50;
+        server 34.238.51.150;
+    }
+
+    # Puerto
+    server {
+        listen 80;
+
+        location / {
+            proxy_pass http://balanginx;
+        }
+    }
