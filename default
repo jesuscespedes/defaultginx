@@ -1,7 +1,7 @@
 
 upstream balanginx {
         server 54.197.13.50;
-        server 34.238.51.150;
+        server 54.85.81.184;
     }
 
     # Puerto
