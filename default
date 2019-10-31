@@ -1,7 +1,7 @@
 
 upstream balanginx {
-        server http://54.197.13.50/iaw-practica-lamp/src;
-        server http://54.85.81.184/iaw-practica-lamp/src;
+        server 54.197.13.50;
+        server 54.85.81.184;
     }
 
     # Puerto
@@ -9,6 +9,6 @@ upstream balanginx {
         listen 80;
 
         location / {
-            proxy_pass http://balanginx;
+            proxy_pass http://balanginx/iaw-practica-lamp/src;
         }
     }
